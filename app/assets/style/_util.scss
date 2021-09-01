@@ -1,0 +1,700 @@
+.w-30{
+  width: 30%;
+}
+.w-40{
+  width: 40%;
+}
+.w-50{
+  width: 50%;
+}
+.w-100{
+  width: 100%;
+}
+.h-100{
+  height: 100%;
+}
+
+@include pad{
+  .w-md-15{
+    width: 15%;
+  }
+  .w-md-40{
+    width: 40%;
+  }
+  .w-md-50{
+    width: 50%;
+  }
+  .w-md-100{
+    width: 100%;
+  }
+}
+@include mobile{
+  .w-sm-10{
+    width: 10%;
+  }
+  .w-sm-30{
+    width: 30%;
+  }
+  .w-sm-50{
+    width: 50%;
+  }
+  .w-sm-100{
+    width: 100% !important;
+  }
+  .h-sm-100{
+    height: 100% ;
+  }
+}
+
+//container
+.container-fluid{
+  padding: 0 88px;
+  width: 100%;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@include pad{
+  .container-md{
+    padding: 0 $size * 10;
+    width: 100%;
+  }
+}
+@include mobile{
+  .container-sm-fluid{
+    padding: 0;
+    width: 100%;
+  }
+  .container-sm{
+    padding: 0 15px;
+    width: 100%;
+  }
+}
+
+//bg
+.bg-primary-light {
+  background-color: $primary_light;
+}
+.bg-secondary {
+  background-color: $secondary;
+}
+.bg-black {
+  background-color: $dark;
+}
+.bg-color-dark {
+  background-color: $color-dark;
+}
+.bg-color-light {
+  background-color: $color-light;
+}
+.bg-other-light {
+  background-color: $other-light;
+}
+
+.img-object-cover {
+  object-fit: cover;
+}
+
+//display
+.d-block {
+  display: block;
+}
+.d-none {
+  display: none;
+}
+
+@include pad{
+  .d-md-block {
+    display: block !important;
+  }
+  .d-md-none {
+    display: none !important;
+  }
+}
+@include mobile{
+  .d-sm-block {
+    display: block !important;
+  }
+  .d-sm-none {
+    display: none !important;
+  }
+}
+
+// flex
+.d-flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-column{
+  flex-direction: column;
+}
+.justify-content-end {
+  justify-content: flex-end;
+};
+.justify-content-center {
+  justify-content: center;
+};
+.justify-content-between {
+  justify-content: space-between;
+};
+.align-items-center {
+  align-items: center;
+};
+@include pad{
+  .flex-md-wrap {
+    flex-wrap: wrap;
+  }
+  .justify-content-md-start {
+    justify-content: flex-start;
+  };
+  .justify-content-md-between {
+    justify-content: space-between;
+  };
+  .order-md-1{
+    order: 1;
+  }
+}
+@include mobile{
+  .d-sm-flex {
+    display: flex;
+  }
+  .flex-sm-wrap {
+    flex-wrap: wrap;
+  }
+  .flex-sm-column{
+    flex-direction: column;
+  }
+  .justify-content-sm-end {
+    justify-content: flex-end;
+  };
+  .justify-content-sm-center {
+    justify-content: center;
+  };
+  .justify-content-sm-between {
+    justify-content: space-between;
+  };
+  .align-items-sm-center {
+    align-items: center;
+  };
+}
+
+//position
+.position-relative{
+  position: relative;
+}
+.position-absolute{
+  position: absolute;
+}
+.top-0{
+  top: 0;
+}
+@include mobile{
+  .position-sm-relative{
+    position: relative;
+  }
+  .position-sm-absolute{
+    position: absolute;
+  }
+}
+
+// text
+.text-primary {
+  color: $primary;
+}
+.text-secondary {
+  color: $secondary;
+}
+.text-white {
+  color: $light;
+}
+.text-black {
+  color: $dark;
+}
+.text-gray-light {
+  color: $gray-light;
+}
+.text-gray-dark {
+  color: $gray-dark;
+}
+
+//text-align
+.text-center{
+  text-align: center;
+}
+.text-end{
+  text-align: right;
+}
+.text-start{
+  text-align: left;
+}
+.fw-bold{
+  font-weight: 700;
+}
+.fw-bolder{
+  font-weight: 600;
+}
+.fw-normal{
+  font-weight: normal;
+}
+@include mobile{
+  .text-sm-center{
+    text-align: center;
+  }
+}
+
+// font
+.fst-italic{
+  font-style: italic;
+}
+
+//font-size
+h1,.fs-1{
+  font-size: $size * 18; //72
+}
+h2,.fs-2{
+  font-size: $size * 16; //64
+}
+h3,.fs-3{
+  font-size: $size * 12; //48
+}
+h4,.fs-4{
+  font-size: $size * 10.5; //42
+}
+h5,.fs-5{
+  font-size: $size * 9; //36
+}
+h6,.fs-6{
+  font-size: $size * 8; //32
+}
+.fs-8{
+  font-size: $size * 6; //24
+}
+.fs-9{
+  font-size: $size * 5; //20
+}
+p,.fs-10{
+  font-size: $size * 4; //16
+}
+.fs-11{
+  font-size: $size * 3.5; //14
+}
+
+@include pad{
+  .fs-md-3{
+    font-size: $size * 12 !important; //48
+  }
+  .fs-md-6{
+    font-size: $size * 8 !important; //32
+  }
+  .fs-md-7{
+    font-size: $size * 7 !important; //28
+  }
+  .fs-md-8{
+    font-size: $size * 6 !important; //24
+  }
+  .fs-md-9{
+    font-size: $size * 5 !important; //20
+  }
+  .fs-md-10{
+    font-size: $size * 4 !important; //16
+  }
+  .fs-md-11{
+    font-size: $size * 3.5 !important; //14
+  }
+}
+@include mobile{
+  .fs-sm-6{
+    font-size: $size * 8 !important; //32
+  }
+  .fs-sm-8{
+    font-size: $size * 6 !important; //24
+  }
+  .fs-sm-9{
+    font-size: $size * 5 !important; //20
+  }
+  .fs-sm-10{
+    font-size: $size * 4 !important; //16
+  }
+  .fs-sm-11{
+    font-size: $size * 3.5 !important; //14
+  }
+}
+
+
+//line-height
+.lh-base{
+  line-height: 1.5;
+}
+.lh-lg{
+  line-height: 1.875;
+}
+@include mobile{
+  .lh-sm-lg{
+    line-height: 1.875;
+  }
+  .lh-sm-xlg{
+    line-height: 2;
+  }
+  .lh-sm-xl{
+    line-height: 2.25;
+  }
+  .lh-sm-xxl{
+    line-height: 2.4;
+  }
+}
+
+.btn{
+  padding: $size * 4 0;
+  @include pad{ 
+    padding: $size * 2.5 0;
+  };
+  @include mobile{ 
+    padding: $size * 2 0;
+  };
+  cursor: pointer;
+  &:hover{
+    background-color: $primary;
+  }
+}
+.btn-secondary {
+  color: $light;
+  background-color: $secondary;
+  border: 1px solid $secondary;
+}
+
+//margin
+.mx-auto{
+  margin-right: auto;
+  margin-left: auto;
+}
+.me-auto{
+  margin-right: auto;
+}
+.me-3{ 
+  margin-right: $size * 2;
+}
+.me-4{ 
+  margin-right: $size * 2.5;
+}
+.me-10{ 
+  margin-right: $size * 5.5;
+}
+.me-14{ 
+  margin-right: $size * 7.5;
+}
+.me-15{ 
+  margin-right: $size * 8;
+}
+.me-19{ 
+  margin-right: $size * 12;
+}
+.me-22{ 
+  margin-right: $size * 16;
+}
+.mb-auto{ 
+  margin-bottom: auto;
+}
+.mb-3{ 
+  margin-bottom: $size * 2;
+}
+.mb-7{ 
+  margin-bottom: $size * 4;
+}
+.mb-9{ 
+  margin-bottom: $size * 5;
+}
+.mb-11{ 
+  margin-bottom: $size * 6;
+}
+.mb-15{ 
+  margin-bottom: $size * 8;
+}
+.mb-17{ 
+  margin-bottom: $size * 10;
+}
+.mb-22{ 
+  margin-bottom: $size * 15;
+}
+.mb-24{ 
+  margin-bottom: $size * 20;
+}
+.mb-25{ 
+  margin-bottom: $size * 24;
+}
+.mb-26{ 
+  margin-bottom: $size * 26;
+}
+.mb-28{ 
+  margin-bottom: $size * 40;
+}
+
+//padding
+.p-5{
+  padding: $size * 3;
+}
+.p-7{
+  padding: $size * 4;
+}
+.px-0{
+  padding-left: 0;
+  padding-right: 0;
+}
+.px-7{
+  padding-left: $size * 4;
+  padding-right: $size * 4;
+}
+.py-5{
+  padding-top: $size * 3;
+  padding-bottom: $size * 3;
+}
+.py-12{
+  padding-top: $size * 6.5;
+  padding-bottom: $size * 6.5;
+}
+.pt-12{
+  padding-top: $size * 6.5;
+}
+.py-14{
+  padding-top: $size * 7.5;
+  padding-bottom: $size * 7.5;
+}
+.pt-15{
+  padding-top: $size * 8;
+}
+.pt-22{
+  padding-top: $size * 15;
+}
+.pb-8{
+  padding-bottom: $size * 4.5;
+}
+.pb-17{
+  padding-bottom: $size * 10;
+}
+.pb-24{
+  padding-bottom: $size * 20;
+}
+
+@include pad{
+  .me-md-0{ 
+    margin-right: 0;
+  }
+  .me-md-3{ 
+    margin-right: $size * 2;
+  }
+  .me-md-11{ 
+    margin-right: $size * 6;
+  }
+  .me-md-14{
+    margin-right: $size * 7.5;
+  }
+  .me-md-17{
+    margin-right: $size * 10;
+  }
+  .me-md-28{
+    margin-right: $size * 26.25;
+  }
+  .mb-md-3{ 
+    margin-bottom: $size * 2;
+  }
+  .mb-md-5{ 
+    margin-bottom: $size * 3;
+  }
+  .mb-md-7{ 
+    margin-bottom: $size * 4;
+  }
+  .mb-md-9{
+    margin-bottom: $size * 5;
+  }
+  .mb-md-11{
+    margin-bottom: $size * 6;
+  }
+  .mb-md-15{
+    margin-bottom: $size * 8;
+  }
+  .mb-md-17{
+    margin-bottom: $size * 10;
+  }
+  .mb-md-21{
+    margin-bottom: $size * 14;
+  }
+  .mb-md-25{
+    margin-bottom: $size * 24;
+  }
+
+  .px-md-11{
+    padding-left: $size * 6;
+    padding-right: $size * 6;
+  }
+  .py-md-6{
+    padding-top: $size * 3.5;
+    padding-bottom: $size * 3.5;
+  }
+  .pt-md-6{
+    padding-top: $size * 3.5;
+  }
+  .pt-md-17{
+    padding-top: $size * 10;
+  }
+  .pb-md-11{
+    padding-bottom: $size * 6;
+  }
+  .pb-md-2{
+    padding-bottom: $size * 1.5;
+  }
+  .pb-md-15{
+    padding-bottom: $size * 8;
+  }
+  .pb-md-21{
+    padding-bottom: $size * 14;
+  }
+}
+
+@include mobile{
+  .mx-sm-auto{
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .mx-sm-19{
+    margin-right: $size * 11.25;
+    margin-left: $size * 11.25;
+  }
+  .me-sm-0{ 
+    margin-right: 0;
+  }
+  .mb-sm-1{ 
+    margin-bottom: $size;
+  }
+  .mb-sm-3{ 
+    margin-bottom: $size * 2;
+  }
+  .mb-sm-7{ 
+    margin-bottom: $size * 4;
+  }
+  .mb-sm-9{ 
+    margin-bottom: $size * 5;
+  }
+  .me-sm-11{ 
+    margin-right: $size * 6;
+  }
+  .mb-sm-11{ 
+    margin-bottom: $size * 6;
+  }
+  .mb-sm-15{ 
+    margin-bottom: $size * 8;
+  }
+  .mb-sm-17{ 
+    margin-bottom: $size * 10;
+  }
+  .mb-sm-21{ 
+    margin-bottom: $size * 14;
+  }
+
+  .p-sm-5{
+    padding: $size * 3;
+  }
+  .py-sm-0{
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .py-sm-2{
+    padding-top: $size * 1.5;
+    padding-bottom: $size * 1.5;
+  }
+  .py-sm-3{
+    padding-top: $size * 2;
+    padding-bottom: $size * 2;
+  }
+  .py-sm-4{
+    padding-top: $size * 2.5;
+    padding-bottom: $size * 2.5;
+  }
+  
+  .pt-sm-2{
+    padding-top: $size * 1.5;
+  }
+  .pt-sm-11{
+    padding-top: $size * 6;
+  }
+  .pt-sm-14{
+    padding-top: $size * 7.5;
+  }
+  .pt-sm-15{
+    padding-top: $size * 8;
+  }
+  .pb-sm-3{
+    padding-bottom: $size * 2;
+  }
+  .pb-sm-11{
+    padding-bottom: $size * 6;
+  }
+  .pb-sm-17{
+    padding-bottom: $size * 10;
+  }
+}
+
+//border
+.border {
+  border: 1px solid $other;
+}
+.border-gray-dark {
+  border: 1px solid $gray-dark;
+}
+.border-top-gray-dark{
+  border-top: 1px solid $gray-dark;
+}
+.border-end-gray-dark{
+  border-right: 1px solid $gray-dark;
+}
+.border-bottom-gray-dark{
+  border-bottom: 1px solid $gray-dark;
+}
+.border-start-gray-dark{
+  border-left: 1px solid $gray-dark;
+}
+.border-start {
+  border-left: 1px solid $other;
+}
+.border-end {
+  border-right: 1px solid $other;
+}
+.border-bottom-secondary{
+  border-bottom: $size * 2 solid $secondary;
+}
+.border-bottom-white{
+  border-bottom: 1px solid $light;
+}
+.border-end-0{
+  border-right: 0;
+}
+.border-start-0{
+  border-left: 0;
+}
+
+// border-radius
+.rounded{
+  border-radius: $size;
+}
+
+// shadow
+.shadow {
+  box-shadow: 0px 2px $size * 1.5 $shadow;
+}
+
+@include mobile{
+  .border-bottom-sm-secondary{
+    border-bottom: $size solid $secondary;
+  }
+  .border-end-sm-white{
+    border-right: 1px solid $light;
+  }
+  .border-bottom-sm-white{
+    border-bottom: 1px solid $light;
+  }
+}
+

@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap');
+
+@import "variable";
+@import "mixin";
+@import "reset";
+@import "media"; //斷點
+@import "util";
+
+@import "base";
+@import "./pages/index";
+@import "./pages/optical";
