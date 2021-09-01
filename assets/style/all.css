@@ -662,11 +662,11 @@ input, textarea {
 
 .banner {
   height: 840px;
-  background: url("../../../assets/images/banner.png") no-repeat center/cover; }
+  background: url("../../assets/images/banner.png") no-repeat center/cover; }
   @media (max-width: 767px) {
     .banner {
       height: 394px;
-      background: url("../../../assets/images/banner-sm.png") no-repeat center/cover; } }
+      background: url("../../assets/images/banner-sm.png") no-repeat center/cover; } }
 
 @media (max-width: 992px) {
   .professional li {
@@ -687,7 +687,7 @@ input, textarea {
       width: 100%; } }
 
 .design {
-  background: url("../../../assets/images/bg.png") no-repeat center/cover; }
+  background: url("../../assets/images/bg.png") no-repeat center/cover; }
   .design .design-bg {
     background-color: #fff;
     opacity: 0.5; }
