@@ -1,10 +1,34 @@
----
-title: 首頁
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>首頁</title>
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <header class="bg-secondary py-14 py-sm-0">
+    <div class="container-fluid container-md container-sm-fluid text-sm-center d-flex flex-sm-wrap justify-content-between align-items-center">
+      <h1 class="w-sm-100 border-bottom-sm-white">
+        <a href="./index.html">
+          <img class="d-block d-md-none" src="./assets/images/logo.png" alt="logo">
+          <img class="py-sm-4 mx-sm-auto d-none d-md-block" src="./assets/images/logo-new.png" alt="logo">
+        </a>
+      </h1>
+      <ul class="d-flex flex-sm-wrap w-sm-100">
+        <li class="fs-9 me-22 me-md-17 w-sm-50 me-sm-0 py-sm-3 border-bottom-sm-white border-end-sm-white"><a href="./optical.html">系列鏡框</a></li>
+        <li class="fs-9 me-22 me-md-17 w-sm-50 me-sm-0 py-sm-3 border-bottom-sm-white"><a href="#">門市據點</a></li>
+        <li class="fs-9 me-22 me-md-17 w-sm-50 me-sm-0 py-sm-3 border-end-sm-white"><a href="#">部落格</a></li>
+        <li class="fs-9 w-sm-50 py-sm-3"><a href="#">常見問題</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    
 <section class="banner">
   <div class="container h-100 d-flex flex-column justify-content-center text-primary text-end">
     <p class="fs-5 fs-md-9 fs-sm-10">Promise-Desert 2020 早春系列</p>
@@ -166,3 +190,94 @@ current: index
     </form>
   </div>
 </section>
+
+  </main>
+
+  <footer class="bg-secondary">
+    <div class="container container-md container-sm pt-15 pt-sm-11">
+      <div class="menu d-flex align-items-center mb-11 d-sm-none">
+        <ul class="d-flex me-auto">
+          <li class="me-19"><a href="./index.html">首頁</a></li>
+          <li class="me-19"><a href="./optical.html">系列鏡框</a></li>
+          <li class="me-19"><a href="#">門市據點</a></li>
+          <li class="me-19"><a href="#">部落格</a></li>
+          <li class="me-19"><a href="#">常見問題</a></li>
+        </ul>
+        <ul class="d-flex d-sm-none">
+          <li class="me-15 me-md-11">
+            <a href="#">
+              <img class="d-md-none" src="./assets/images/icon-fb.svg" alt="fb">
+              <img class="d-none d-md-block" src="./assets/images/ic_social_fb.svg" alt="fb">
+            </a>
+          </li>
+          <li class="me-15 me-md-11">
+            <a href="#">
+              <img class="d-md-none d-sm-none" src="./assets/images/icon-ig.svg" alt="ig">
+              <img class="d-none d-md-block" src="./assets/images/ic_social_ig.svg" alt="ig">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img class="d-md-none d-sm-none" src="./assets/images/icon-line.svg" alt="line">
+              <img class="d-none d-md-block" src="./assets/images/ic_social_line.svg" alt="line">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="mb-15 mb-md-11 mb-sm-7 border-bottom-white">
+        <li class="mb-7 mb-md-5 mb-sm-1">
+          <ul class="d-flex">
+            <!-- phone -->
+            <li class="me-auto">
+              <a class="d-flex fs-5 fs-md-9 fs-sm-10 lh-sm-lg" href="tel:0800-000-000">
+                <img class="me-10 d-md-none d-sm-none" src="./assets/images/icon-phone.svg" alt="phone">
+                <img class="me-3 d-none d-md-block" src="./assets/images/ic_phone_48px.svg" alt="phone">
+                0800-000-000
+              </a>
+            </li>
+            <!-- mob -->
+            <li class="d-none d-sm-block">
+              <ul class="d-flex">
+                <li class="me-sm-11">
+                  <a href="#">
+                    <img src="./assets/images/ic_social_fb.svg" alt="fb">
+                  </a>
+                </li>
+                <li class="me-sm-11">
+                  <a href="#">
+                    <img src="./assets/images/ic_social_ig.svg" alt="ig">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./assets/images/ic_social_line.svg" alt="line">
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="mb-11 mb-md-9 mb-sm-11">
+        <!-- mail -->
+         <a class="d-flex fs-5 fs-md-9 fs-sm-10 lh-sm-lg" href="mailto:glasses@business.com">
+           <img class="me-10 d-md-none d-sm-none" src="./assets/images/icon-mail.svg" alt="mail">
+           <img class="me-3 d-none d-md-block" src="./assets/images/ic_mail_outline_24px.svg" alt="mail">
+           glasses@business.com
+         </a>
+        </li>
+      </ul>
+      <div class="d-flex justify-content-between flex-sm-wrap pb-17 pb-md-15 pb-sm-11">
+        <p class="text-white fs-sm-11 mb-sm-3">Copyright © 2020 Glasses.All rights reserved.</p>
+        <ul class="d-flex flex-sm-column">
+          <li class="fs-11 me-19 mb-sm-3"><a href="#">隱私權政策</a></li>
+          <li class="fs-10"><a href="#">服務條款</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="./assets/js/vendors.js"></script>
+  <!-- <script src="./assets/js/all.js"></script> -->
+</body>
+
+</html>
